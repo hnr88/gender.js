@@ -1,25 +1,25 @@
-# Gender.js
+# Gender-js
 
 <p>
   <img src="public/logo.png" style="border-radius: 20px" alt="Logo" width="200">
 </p>
 
 
-Gender.js is a simple TypeScript library that acknowledges the biological reality of two genders, male and female. It provides a list of these two genders and a method to fetch a gender based on provided input.
+Gender-js is a simple TypeScript library that acknowledges the biological reality of two genders, male and female. It provides a list of these two genders and a method to fetch a gender based on provided input.
 
 ## Installation
 
 Using npm:
 
 ```bash
-npm install gender.js
+npm install gender-js
 ```
 
 ## Usage
 Import the Gender object from the module and use the getGenders and getGender methods:
 
 ```javascript
-import Gender from 'gender.js';
+import Gender from 'gender-js';
 
 const genders = Gender.getGenders();
 console.log(genders); // Outputs: [{ label: 'Male', value: 'male' }, { label: 'Female', value: 'female' }]
@@ -46,7 +46,7 @@ console.log(alien); // Outputs a funny error message.
 
 To work on this project locally:
 
-- Clone the repository: git clone https://github.com/your-username/gender.js
+- Clone the repository: git clone https://github.com/hnr88/gender.js
 - Install dependencies: npm install
 - Start the development server: npm run dev
 
