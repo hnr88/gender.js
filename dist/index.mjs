@@ -1,7 +1,7 @@
-const n = [
+const o = [
   { label: "Male", value: "male" },
   { label: "Female", value: "female" }
-], r = [
+], n = [
   "Hmm, that's a new one! We don't have that gender in our list!",
   "Wow! That gender is out of this world!",
   "Haven't heard of that gender. Is it from Mars?",
@@ -22,17 +22,12 @@ const n = [
   "Oops, we only got two options: 'male' and 'female'. Anything else causes a system hiccup!",
   "That's a new one! 'Male' and 'female' were the two options we're acquainted with.",
   "Well, this is embarrassing. We were only prepped for 'male' and 'female'."
-], s = () => r[Math.floor(Math.random() * r.length)], t = (e) => e === "object" ? n : n.map((o) => o.value), l = (e) => n.find(
+], r = () => n[Math.floor(Math.random() * n.length)], t = (e) => e === "object" ? o : o.map((a) => a.value), s = (e) => o.find(
   (a) => a.label === e || a.value === e
-) || s();
-(function() {
-  const e = t();
-  console.log(e);
-})();
-const d = {
+) || r(), l = {
   getGenders: t,
-  getGender: l
+  getGender: s
 };
 export {
-  d as default
+  l as default
 };
